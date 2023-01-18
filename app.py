@@ -79,7 +79,7 @@ with tabs[0]:
 
     You can look at the demo of the model in the **Model Demo** tab and look at the results in the **Results** tab
 
-    You can also loot at my [GitHub](https://github.com/aadityarock2000/PredictiveCricketScores) for more information on the process of building the machine learning model.
+    You can also look at my [GitHub](https://github.com/aadityarock2000/PredictiveCricketScores) for more information on the process of building the machine learning model.
     """)
 
 with tabs[1]:
