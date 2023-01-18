@@ -4,6 +4,7 @@ import pandas as pd
 import gzip, pickle
 from sklearn.preprocessing import StandardScaler
 from joblib import load
+from PIL import Image
 
 st.set_page_config(
 page_title="Predictive Cricket Score Analytics",
@@ -24,6 +25,7 @@ def custom_accuracy(y_test,y_pred,thresold):
 
 
 
+
 st.title('Predictive Cricket Score Analytics')
 
 #main page image
@@ -37,9 +39,13 @@ tabs=st.tabs(['Introduction','Model Demo','Results'])
 with tabs[0]:
     st.header('Introduction')
     col_1a,col_1b=st.columns(2)
-    col_1a.markdown("""
-    <img src="https://cdn.crunchify.com/wp-content/uploads/2012/04/IPL-Teams-and-Captains.jpg" width="100%">""", unsafe_allow_html=True)
-    col_1a.caption('IPL Team Captains and their different jerseys')
+
+    image = Image.open('assets/ipl_streamlit.jpg')
+    col_1a.image(image, caption='IPL Team Captains and their different jerseys')
+    
+    # col_1a.markdown("""
+    # <img src="assets/ipl_streamlit.jpg" width="100%">""", unsafe_allow_html=True)
+    # col_1a.caption('IPL Team Captains and their different jerseys')
 
     col_1b.markdown("""
     I love watching the IPL (Indian Premier League). For the uninitiated, it is the most hyped sporting event
@@ -120,3 +126,5 @@ with tabs[1]:
         st.write('The final score predicted is:')
         st.write(output)
 
+with tabs[2]:
+    st.write("Coming Soon!")
