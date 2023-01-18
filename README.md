@@ -6,6 +6,6 @@ The IPL is a professional men's Twenty20 cricket league, contested by ten teams 
 
 This model utilizes historical IPL match data to train a regression model that can predict the final scores of the first innings. The traditional approach of calculating final scores based on current runs and run rate, also known as the Duckworth-Lewis-Stern (DLS) method, has certain limitations. Our model takes into account of the current game in play and various other factors such as the the number of wickets fallen, the curent score of the striker and non-striker among others to make accurate predictions.
 
-You can find the demo of the model in the "Model Demo" tab and the results in the "Results" tab. For more information on the process of building the machine learning model and the feature engineering used, you can check out my GitHub repository.
+You can find the demo of the model in the "Model Demo" tab and the results in the "Results" tab from [this website](https://aadityarock2000-predictivecricketscores-app-b6x7ac.streamlit.app/). For more information on the process of building the machine learning model and the feature engineering used, you can check out my GitHub repository.
 
 Thanks for visiting the IPL Score Predictor! We hope you find this model useful for your IPL watching experience and to make more informed decisions in fantasy cricket leagues.
